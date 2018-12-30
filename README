@@ -1,0 +1,21 @@
+##Author Raghvendra Acharya
+##Date 2018-12-29
+
+Description
+	1.This Web application to get crawled urls and images based on the given seed url and depth, written in JQuery, Javascript, Bootstrap.
+
+Assumption
+	1.Seed Url is case sensetive.
+	2.Seed Url must be complete (eg: https://www.abc.com/)
+
+Setup
+	1.Content delivery network(CDN) used for JQuery and Bootstrap requires internet connectivity.
+
+Run the application
+	1. Open the index.html page in gives seed url and depth(for depth equal to 1 application will written same url for depth greater than one it will retrun crawled urls).
+	2.There are 2 button "Fetch Links" and "Fetch Images".
+	3.Fetch Links button will display all the crawled link for the requested url with given depth on click on particular link it will display all the images in the that web page on a Bootstrap modal.
+	4.Fecth Images button will display all crawled the images for given seed url with till its depth.
+
+
+For depth greater than 2(large data set) sometimes broweser may unresponsive so please dont exit/close/kill the browser tab just wait for response it will display the result.

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Web Crawler</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+
+  <!-- <script src="http://code.jquery.com/jquery-1.8.0.js"></script> -->
+  <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.35.4/css/bootstrap-dialog.min.css"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.35.4/js/bootstrap-dialog.min.js"></script>
+
+  <!-- Internal -->
+  <link rel="stylesheet" href="resources/css/index.css">
+  <script src="resources/js/index.js"></script>
+  <script src="resources/js/util.js"></script>
+  <script src="resources/js/image_gallary.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Web Crawler</a>
+    </div>
+  </div>
+</nav>
+
+ <div class="container">  
+  <div class="panel panel-default">
+    <div class="panel-heading"></div>
+    <div class="panel-body">
+      <div class="row col-md-12">
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+                 <div class="col-md-12">
+                    <div class="form-group row">
+                        <label for="seed_url" class="col-md-1 control-label">Seed Url</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="seed_url" placeholder="">
+                        </div>
+                        <label for="depth" class="col-md-1 control-label">Depth</label>
+                        <div class="col-md-2">
+                            <input type="number" class="form-control" id="depth" placeholder="">
+                        </div>
+                        <div class="col-md-2 ">
+                            <button id="fetch" type="button" onclick="getOnlyPages()" class="btn btn-primary">Fetch Links</button>
+                        </div>
+                        <div class="col-md-2 ">
+                            <button id="fetch_images" type="button" onclick="getAllImages()" class="btn btn-primary">Fetch All Images</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+      </div>
+      <div class="row col-md-12" id="all_pages">
+      
+    </div>
+    </div>
+    
+    <div class="panel-footer"></div>
+  </div>
+</div> 
+
+
+</body>
+</html>
