@@ -3,7 +3,6 @@
 ##Date 2018-12-29
 
 
-
 Description
 
 	1. This Web application to display crawled URLs and images based on the given seed URL and depth, written in jQuery, JavaScript, Bootstrap.
@@ -26,10 +25,12 @@ Run the application
 
 	3. There are 2 buttons "Fetch Links" and "Fetch Images".
 
-	4. Fetch Links button will display all the crawled link for the requested URL with given depth on click on a particular link it will display all the images in that web page on a Bootstrap modal.
+	4. To display images of specific page click on the links displayed in list.
 
-	5. Fetch Images button will display all crawled the images for given seed URL with till its depth.
+	5. Fetch Links button will display all the crawled link for the requested URL with given depth on click on a particular link it will display all the images in that web page on a Bootstrap modal.
 
+	6. Fetch Images button will display all crawled the images for given seed URL with till its depth.
 
-For depth greater than 2(large data set) sometimes browser may unresponsive so please don't exit/close/kill the browser tab just wait for the response it will display the result.
-
+Important
+	
+	1.All applications are running in development mode so for depth greater than  2(large data set) sometime browser may become unresponsive so please don't exit/close/kill the browser tab just wait for the response it will display the result.

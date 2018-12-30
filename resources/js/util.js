@@ -26,7 +26,6 @@ $.ajax({
 return responseData;
 }
 
-
 function getFinalUrl(baseUrl,method,parameters){
     params = []
     baseUrl = baseUrl+method+"?"
@@ -66,7 +65,7 @@ function getHtmlStringOfImages(imageList){
     strImageHtml = ""
     imageList.forEach(createImagesHtml);
     function createImagesHtml(element,index){
-        strImageHtml+='<img src="'+element+'" height="100" width="100"/>'
+        strImageHtml+='<img src="'+element+'" class="img-fluid img" width="200" height="150"/>'
     }
     return strImageHtml;
 }
@@ -78,4 +77,17 @@ function getAllHtmlStringImages(listAllLinks){
         allStrImageHtml+=strHtml;
     }
     return allStrImageHtml;
+}
+
+function show_error(msg){
+    alert(msg);   
+}
+
+function validateInput(){
+    var seedUrl = $("#seed_url").val();
+    var depth = $("#depth").val();    
+    if (seedUrl == "" || depth == ""){        
+        return false;
+    }
+    return true;
 }
